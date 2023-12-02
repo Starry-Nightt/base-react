@@ -9,7 +9,7 @@ function Todo() {
   const {data, loading, setData, refetch} = useFetch(API.TODO)
 
   const handleAdd = (todo) => {
-    setData(prev => [todo, ...data])
+    setData(prev => [todo, ...prev])
   }
 
   return (
